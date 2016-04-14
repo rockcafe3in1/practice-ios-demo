@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment version="2352" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--lololol-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="lololol" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fiJ-hQ-8QV"/>
+                        <viewControllerLayoutGuide type="bottom" id="Opf-7n-Z2G"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="-" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7E5-Kq-iSd" userLabel="display">
+                                <rect key="frame" x="20" y="59" width="560" height="60"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="highlightedColor" red="0.9959825873374939" green="0.99621325731277466" blue="0.99187678098678589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="20" y="36" width="360" height="90"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hu3-Kf-Q2Q" userLabel="button">
+                                <rect key="frame" x="20" y="526" width="560" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Display digital one in label"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="20" y="532" width="360" height="48"/>
+                                </variation>
+                                <connections>
+                                    <action selector="click1" destination="BYZ-38-t0r" eventType="touchUpInside" id="B14-Es-RGe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBN-IM-DXZ" userLabel="display2">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="20" y="146" width="360" height="89"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XBN-IM-DXZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="9i0-Hf-wk9"/>
+                            <constraint firstItem="7E5-Kq-iSd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z2d-ZM-5rW">
+                                <variation key="widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="7E5-Kq-iSd" firstAttribute="top" secondItem="fiJ-hQ-8QV" secondAttribute="bottom" constant="8" id="ZM7-8I-MSV"/>
+                            <constraint firstItem="7E5-Kq-iSd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="dUP-5c-u3Y">
+                                <variation key="widthClass=compact" constant="4"/>
+                            </constraint>
+                            <constraint firstItem="hu3-Kf-Q2Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hMh-qG-sr4"/>
+                            <constraint firstItem="hu3-Kf-Q2Q" firstAttribute="bottom" secondItem="Opf-7n-Z2G" secondAttribute="top" constant="20" id="nX4-RR-91n">
+                                <variation key="widthClass=compact" constant="-8"/>
+                            </constraint>
+                            <constraint firstItem="XBN-IM-DXZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pkH-FG-xgQ"/>
+                            <constraint firstItem="XBN-IM-DXZ" firstAttribute="top" secondItem="7E5-Kq-iSd" secondAttribute="bottom" constant="8" id="uZk-ZD-Yhf">
+                                <variation key="widthClass=compact" constant="16"/>
+                            </constraint>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="XBN-IM-DXZ"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="ZM7-8I-MSV"/>
+                                <exclude reference="dUP-5c-u3Y"/>
+                                <exclude reference="9i0-Hf-wk9"/>
+                                <exclude reference="pkH-FG-xgQ"/>
+                                <exclude reference="uZk-ZD-Yhf"/>
+                                <exclude reference="hMh-qG-sr4"/>
+                                <exclude reference="nX4-RR-91n"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="XBN-IM-DXZ"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="ZM7-8I-MSV"/>
+                                <include reference="dUP-5c-u3Y"/>
+                                <include reference="9i0-Hf-wk9"/>
+                                <include reference="pkH-FG-xgQ"/>
+                                <include reference="uZk-ZD-Yhf"/>
+                                <include reference="hMh-qG-sr4"/>
+                                <include reference="nX4-RR-91n"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="display" destination="7E5-Kq-iSd" id="hcy-d9-e4h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="105" y="371"/>
+        </scene>
+    </scenes>
+</document>
